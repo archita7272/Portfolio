@@ -1,7 +1,11 @@
 /* ==========================================
            CSS VARIABLES - Easy theme customization
            ========================================== */
-        :root {
+        body{
+            background-color: red !important;
+        }
+        
+           :root {
             /* Color Palette */
             --color-primary: #0F172A;        /* Dark navy */
             --color-accent: #F59E0B;         /* Amber accent */
