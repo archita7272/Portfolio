@@ -116,66 +116,66 @@
         // ==========================================
         // CONTACT FORM SUBMISSION
         // ==========================================
-        const contactForm = document.getElementById('contactForm');
-        const formMessage = document.getElementById('formMessage');
+        // const contactForm = document.getElementById('contactForm');
+        // const formMessage = document.getElementById('formMessage');
         
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
+        // contactForm.addEventListener('submit', async (e) => {
+        //     e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
+        //     // Get form data
+        //     const formData = new FormData(contactForm);
+        //     const data = Object.fromEntries(formData);
             
-            // Here you would typically send the data to a server
-            // For demonstration, we'll simulate a successful submission
+        //     // Here you would typically send the data to a server
+        //     // For demonstration, we'll simulate a successful submission
             
-            try {
-                // Simulate API call
-                await new Promise(resolve => setTimeout(resolve, 1000));
+        //     try {
+        //         // Simulate API call
+        //         await new Promise(resolve => setTimeout(resolve, 1000));
                 
-                // Show success message
-                formMessage.textContent = 'Thank you for your message! I\'ll get back to you soon.';
-                formMessage.className = 'form-message success';
+        //         // Show success message
+        //         formMessage.textContent = 'Thank you for your message! I\'ll get back to you soon.';
+        //         formMessage.className = 'form-message success';
                 
-                // Reset form
-                contactForm.reset();
+        //         // Reset form
+        //         contactForm.reset();
                 
-                // Hide message after 5 seconds
-                setTimeout(() => {
-                    formMessage.style.display = 'none';
-                }, 5000);
+        //         // Hide message after 5 seconds
+        //         setTimeout(() => {
+        //             formMessage.style.display = 'none';
+        //         }, 5000);
                 
-            } catch (error) {
-                // Show error message
-                formMessage.textContent = 'Oops! Something went wrong. Please try again.';
-                formMessage.className = 'form-message error';
-            }
+        //     } catch (error) {
+        //         // Show error message
+        //         formMessage.textContent = 'Oops! Something went wrong. Please try again.';
+        //         formMessage.className = 'form-message error';
+        //     }
             
-            // Note: To actually send emails, you'll need to:
-            // 1. Set up a backend API endpoint (Node.js, PHP, etc.)
-            // 2. Use a service like SendGrid, Mailgun, or EmailJS
-            // 3. Replace the simulated API call above with actual fetch() request
-            // Example:
-            /*
-            try {
-                const response = await fetch('YOUR_API_ENDPOINT', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                });
+        //     // Note: To actually send emails, you'll need to:
+        //     // 1. Set up a backend API endpoint (Node.js, PHP, etc.)
+        //     // 2. Use a service like SendGrid, Mailgun, or EmailJS
+        //     // 3. Replace the simulated API call above with actual fetch() request
+        //     // Example:
+        //     /*
+        //     try {
+        //         const response = await fetch('YOUR_API_ENDPOINT', {
+        //             method: 'POST',
+        //             headers: {
+        //                 'Content-Type': 'application/json',
+        //             },
+        //             body: JSON.stringify(data)
+        //         });
                 
-                if (response.ok) {
-                    // Success handling
-                } else {
-                    // Error handling
-                }
-            } catch (error) {
-                // Error handling
-            }
-            */
-        });
+        //         if (response.ok) {
+        //             // Success handling
+        //         } else {
+        //             // Error handling
+        //         }
+        //     } catch (error) {
+        //         // Error handling
+        //     }
+        //     */
+        // });
         
         // ==========================================
         // SMOOTH SCROLLING FOR ANCHOR LINKS
